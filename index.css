@@ -19,23 +19,59 @@ html {
 }
 
 @media screen and (max-width: 425px) {
-    body {
+    main {
         flex-direction: column;
-        max-width: calc(100% - 0.625rem);
+        align-items: center;
+        justify-content: center;
     }
 
     #descriptive_section {
-        border-radius: 0 0 0.5rem 0.5rem;
+        border-radius: 0 0 0.5rem 0.5rem !important;
+    }
+
+    #image {
+
+        img:first-child {
+            display: none;
+        }
+
+        img:last-child {
+            width: 100%;
+            display: block !important;
+            border-radius: 0.5rem 0.5rem 0 0 !important;
+        }
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 549px) {
+    #image {
+        img:first-child {
+            height: 250px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 910px) {
+    #image {
+        img:first-child {
+            height: 400px !important;
+        }
     }
 }
 
 body {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
     background-color: var(--cream);
-    align-self: center;
-    justify-self: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    min-height: min-content;
+    padding: 0 2rem;
 }
 
 #descriptive_section {
@@ -43,7 +79,20 @@ body {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+#image {
+    img:last-child {
+        display: none;
+    }
+
+    img:first-child {
+        min-height: 100%;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
 }
 
 #price_section {
@@ -72,6 +121,7 @@ button {
     justify-content: center;
     border-radius: 0.5rem;
     outline: none;
+    border: none;
 }
 
 .attribution {
