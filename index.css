@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url('./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 :root {
     --green-500: hsl(158, 36%, 37%);
     --green-700: hsl(158, 42%, 18%);
