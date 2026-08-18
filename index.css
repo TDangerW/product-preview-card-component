@@ -26,6 +26,7 @@
     --grey: hsl(228, 12%, 48%);
     --cream: hsl(30, 38%, 92%);
     --white: hsl(0, 0%, 100%);
+    --attribution: hsl(228, 45%, 44%);
 }
 
 html {
@@ -235,5 +236,5 @@ button:hover {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--attribution);
 }
